@@ -75,11 +75,16 @@ footer {
         <a onclick="showPDF('docs/document3.pdf')">Document 3</a>
     </nav>
 
-    <iframe id="pdfFrame" src="docs/Intrebari si Raspunsuri PNRR Digitalizare din iulie.pdf"></iframeion showPDF(url) {
-            document.getElementById('pdfFrame').src = url;
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
+    <iframe id="pdfFrame" src="docs/Intrebari si Raspunsuri PNRR Digitalizare din iulie.pdf"></iframe>
+
+<script>
+    function showPDF(url) {
+        document.getElementById('pdfFrame').src = url;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+                                                                                                 
 
 
         </ul>
