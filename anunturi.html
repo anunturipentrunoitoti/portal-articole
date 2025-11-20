@@ -74,14 +74,14 @@ footer {
         <a onclick="showPDF('docs/document2.pdf')" target='_blank'>Document 2</a>
         <a onclick="showPDF('docs/document3.pdf')" target='_blank'>Document 3</a>
     </nav>
-
+    <button onclick="history.back()">⟵ Înapoi</button>
     <iframe id="pdfFrame" src="docs/Intrebari si Raspunsuri PNRR Digitalizare din iulie.pdf"></iframe>
 
 <script>
-    function showPDF(url) {
+   function showPDF(url) {
         document.getElementById('pdfFrame').src = url;
-        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
 </script>
 
                                                                                                  
