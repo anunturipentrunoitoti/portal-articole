@@ -68,8 +68,19 @@ footer {
             <li><a href='docs/comunicat2022.pdf' target='_blank'>Comunicat: Lansarea proiectului Digitalizare</a></li>
             <li><a href='docs/parteneriat2022.docx' target='_blank'>Anunț: Parteneriat strategic pentru educație digitală</a></li>
             
-       <h2>Document PDF</h2>
-       docs/Intrebari si Raspunsuri PNRR Digitalizare din iulie.pdf</iframe>
+            
+    <nav>
+        <a onclick="showPDF('docs/Intrebari si Raspunsuri PNRR Digitalizare din iulie.pdf')">Document 1</a>
+        <a onclick="showPDF('docs/document2.pdf')">Document 2</a>
+        <a onclick="showPDF('docs/document3.pdf')">Document 3</a>
+    </nav>
+
+    <iframe id="pdfFrame" src="docs/Intrebari si Raspunsuri PNRR Digitalizare din iulie.pdf"></iframeion showPDF(url) {
+            document.getElementById('pdfFrame').src = url;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
 
         </ul>
     </div>
