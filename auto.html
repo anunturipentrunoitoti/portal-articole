@@ -61,52 +61,48 @@ footer {
         <a href='marketing.html'>Marketing & SEO</a>
         <a href='anunturi.html'>Anunțuri</a>
     </nav>
-    <div class='content'>
-        <h2>Articole recomandate</h2>
-        <ul>
-            <li><a href='docs/Intrebari si Raspunsuri PNRR Digitalizare din iulie.pdf' target='_blank'>Intrebari</a></li>
-            <li><a href='docs/articol_vanzari_auto_2.html' target='_blank'>Masina</a></li>
+<div class="content">
+    <h2>Articole recomandate</h2>
+    <ul>
+        <li><a href="docs/Intrebari siri PNRR Digitalizare din iulie.pdfÎntrebări</a></li>
+        <li><a href="docs/articol_vanzari_auto_2.html" target="_blank">Ma  <!-- Meniu și articole -->
+    <nav style="background:#333; padding:10px; text-align:center;">
+        <a onclick="showArticle('articol1')" style="color:#fff; margin:0 15px; cursor:pointer;">Sfaturi pentru vânzarea de mașini</a>
+        <a onclick="showArticle('articol2')" style="color:#fff; margin:0 15px; cursor:pointer;">Procesul de vânzare auto</a>
+    </nav>
 
-        </ul>
- <!-- Meniu și articole -->
+    <section id="articol1" style="display:block; padding:20px;">
+        <h1>Sfaturi pentru vânzarea de mașini</h1>
+        <img src="docs/img_vanzari_auto_1.jpg" alt="Imagine articol" style="max-width:90%; display:block; margin:auto;">
+gi nevoile clientului.
+            Ascultă cu atenție cerințele și preferințele acestuia, oferă informații clare și complete
+            despre produs și creează o relație bazată pe încredere. Prezentările trebuie să fie atractive,
+            punând în evidență caracteristicile și beneficiile mașinii. Gestionarea obiecțiilor este un pas
+            important: răspunde calm și oferă soluții adaptate. În final, închiderea vânzării trebuie realizată
+            cu profesionalism, asigurându-te că clientul este mulțumit și bine informat.
+        </p>
+    </section>
 
-<nav>
-    <a onclick="showArticle('articol1')">Sfaturi pentru vânzarea de mașini</a>
-    <a onclick="showArticle('articol2')">Procesul de vânzare auto</a>
-</nav>
+    <section id="articol2" style="display:none; padding:20px;">
+        <h1>Procesul de vânzare auto</h1>
+        <img src="docs/img_vanzari_auto_2.jpg" alt="Imagine articol" style="max-width:90%;e cu o primire călduroasă și profesională a clientului.
+            Este important să oferi informații detaliate despre modelul dorit, să organizezi un test-drive
+            și să răspunzi la toate întrebările. Negocierea prețului trebuie să fie transparentă și corectă,
+            luând în considerare opțiunile de finanțare și eventualele reduceri. După acceptarea ofertei,
+            finalizează actele rapid și eficient. Oferirea unui serviciu post-vânzare excelent va consolida
+            relația cu clientul și va crește șansele de recomandări viitoare.
+        </p>
+    </section>
 
-<section id="articol1" class="active">
-    <h1>Sfaturi pentru vânzarea de mașini</h1>
-    <img src="'docs/articol_vanzari_auto_1.html'" alt="Imagine articolîn vânzarea de mașini, este esențial să înțelegi nevoile clientului.
-        Ascultă cu atenție cerințele și preferințele acestuia, oferă informații clare și complete
-        despre produs și creează o relație bazată pe încredere. Prezentările trebuie să fie atractive,
-        punând în evidență caracteristicile și beneficiile mașinii. Gestionarea obiecțiilor este un pas
-        important: răspunde calm și oferă soluții adaptate. În final, închiderea vânzării trebuie realizată
-        cu profesionalism, asigurându-te că clientul este mulțumit și bine informat.
-    </p>
-</section>
+    <script>
+        function showArticle(id) {
+            document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</div>
 
-<section id="articol2">
-    <h1>Procesul de vânzare auto</h1>
-    <img src="E_2
-    <p>
-        Procesul de vânzare auto începe cu o primire călduroasă și profesională a clientului.
-        Este important să oferi informații detaliate despre modelul dorit, să organizezi un test-drive
-        și să răspunzi la toate întrebările. Negocierea prețului trebuie să fie transparentă și corectă,
-        luând în considerare opțiunile de finanțare și eventualele reduceri. După acceptarea ofertei,
-        finalizează actele rapid și eficient. Oferirea unui serviciu post-vânzare excelent va consolida
-        relația cu clientul și va crește șansele de recomandări viitoare.
-    </p>
-</section>
-
-<script>
-    function showArticle(id) {
-        document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-        document.getElementById(id).classList.add('active');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-</script>
-    </div>
     <footer>
         <p>&copy; 2022 Portal Articole. Toate drepturile rezervate.</p>
     </footer>
